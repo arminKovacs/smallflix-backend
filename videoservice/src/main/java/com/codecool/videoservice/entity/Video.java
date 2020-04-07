@@ -1,4 +1,4 @@
-package com.codecool.videoservice.entities;
+package com.codecool.videoservice.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

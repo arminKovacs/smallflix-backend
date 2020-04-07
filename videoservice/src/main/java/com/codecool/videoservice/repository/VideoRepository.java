@@ -1,6 +1,6 @@
-package com.codecool.videoservice.repositories;
+package com.codecool.videoservice.repository;
 
-import com.codecool.videoservice.entities.Video;
+import com.codecool.videoservice.entity.Video;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface VideoRepository extends JpaRepository<Video, Long> {
