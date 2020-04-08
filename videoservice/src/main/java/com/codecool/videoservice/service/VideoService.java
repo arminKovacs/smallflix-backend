@@ -14,9 +14,10 @@ public class VideoService {
     private VideoRepository videoRepository;
 
     public void saveVideo(Video videoToSave) {
+        videoRepository.save(videoToSave);
     }
 
     public List<Video> getAll() {
-        return null;
+        return videoRepository.findAll();
     }
 }
