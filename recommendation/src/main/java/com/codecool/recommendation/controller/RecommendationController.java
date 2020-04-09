@@ -1,6 +1,6 @@
 package com.codecool.recommendation.controller;
 
-import com.codecool.recommendation.service.VideoService;
+import com.codecool.recommendation.service.VideosGetter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class RecommendationController {
 
     @Autowired
-    private VideoService videoService;
+    private VideosGetter videosGetter;
 
     @GetMapping("/test")
     public void test() {
-        videoService.getAllVideos();
+        videosGetter.getAllVideos();
     }
 }

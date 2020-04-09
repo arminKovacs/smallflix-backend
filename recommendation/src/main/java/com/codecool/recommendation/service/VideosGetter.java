@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import java.util.List;
 
 @Service
-public class VideoService {
+public class VideosGetter {
 
     @Autowired
     private RestTemplate restTemplate;

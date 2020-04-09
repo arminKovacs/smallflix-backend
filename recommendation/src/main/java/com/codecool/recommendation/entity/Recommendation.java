@@ -1,4 +1,4 @@
-package com.codecool.recommendation.Entity;
+package com.codecool.recommendation.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
