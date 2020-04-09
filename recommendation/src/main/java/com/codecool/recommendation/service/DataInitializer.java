@@ -24,7 +24,7 @@ public class DataInitializer {
     private RecommendationService recommendationService;
 
     @Bean
-    public CommandLineRunner createVideos() {
+    public CommandLineRunner createRecommendations() {
         List<Video> videos = videosGetter.getAllVideos();
         return args -> {
             Recommendation drumRecommendation = Recommendation.builder()
