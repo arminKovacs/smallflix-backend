@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../smallflix-backend/recommendation/recommendation.iml" filepath="$PROJECT_DIR$/../smallflix-backend/recommendation/recommendation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../smallflix-backend/service-registry/service-registry.iml" filepath="$PROJECT_DIR$/../smallflix-backend/service-registry/service-registry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../smallflix-backend/videoservice/videoservice.iml" filepath="$PROJECT_DIR$/../smallflix-backend/videoservice/videoservice.iml" />
+    </modules>
+  </component>
+</project>
