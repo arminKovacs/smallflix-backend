@@ -20,8 +20,8 @@ public class RecommendationController {
     @Autowired
     private RecommendationRepository recommendationRepository;
 
-    @GetMapping("/{id}/list-all-recommendation")
-    public List<Recommendation> getAllRecommendationsByVideoId(@PathVariable Long id) {
-        return recommendationRepository.getAllByVideoId(id);
+    @GetMapping("/{videoId}/list-all-recommendation")
+    public List<Recommendation> getAllRecommendationsByVideoId(@PathVariable Long videoId) {
+        return recommendationRepository.getAllByVideoId(videoId);
     }
 }
