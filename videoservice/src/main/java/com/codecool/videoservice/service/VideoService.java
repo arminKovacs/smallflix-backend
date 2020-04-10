@@ -8,12 +8,16 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class VideoService {
 
     @Autowired
     private VideoRepository videoRepository;
+
+    @Autowired
+    private RecommendationGetter recommendationGetter;
 
     public void saveVideo(Video videoToSave) {
         videoRepository.save(videoToSave);
@@ -24,6 +28,10 @@ public class VideoService {
     }
 
     public HashMap<Video, List<Recommendation>> getDetailsById(Long id) {
-        return null;
+        HashMap<Video, List<Recommendation>> videoDetails = new HashMap<>();
+        List<Recommendation> videosRecommendations = recommendationGetter.getAllRecommendationForVideo(id);
+        Video videoToReturn = videoRepository.findById(id).orElse(null);
+        videoDetails.put(videoToReturn, videosRecommendations);
+        return videoDetails;
     }
 }
