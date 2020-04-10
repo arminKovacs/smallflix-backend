@@ -12,7 +12,7 @@ public class RecommendationService {
     private RecommendationRepository recommendationRepository;
 
     public void saveRecommendation(Recommendation recommendation, Long videoId) {
-        recommendation.setId(videoId);
+        recommendation.setVideoId(videoId);
         recommendationRepository.saveAndFlush(recommendation);
     }
 }
